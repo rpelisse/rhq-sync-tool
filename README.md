@@ -1,8 +1,6 @@
-jon-mig
-=======
+rhq-sync-tool
+=============
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 A tool for RHQ to export and import data from one server to another, using JSON as a transfer format.
 
 How to build ?
@@ -34,4 +32,3 @@ A tool for RHQ to export and import data from one server to another, using JSON 
 >>>>>>> 1578b15... Initial commit
 =======
 A tool for RHQ to export and import data from one server to another, using JSON as a transfer format.
->>>>>>> 1578b15bdcf7077fdf1d6bd93b76729da69c69cc
