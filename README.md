@@ -1,6 +1,7 @@
 jon-mig
 =======
 
+<<<<<<< HEAD
 A tool for RHQ to export and import data from one server to another, using JSON as a transfer format.
 
 How to build ?
@@ -27,3 +28,6 @@ TODO
 * Add proper static documentation (Awestruct ? Middleman ? MarkedDown ?)
 * See if tools works for > 3.0.1
 * Release version 1.0
+=======
+A tool for RHQ to export and import data from one server to another, using JSON as a transfer format.
+>>>>>>> 1578b15... Initial commit

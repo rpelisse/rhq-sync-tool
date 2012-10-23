@@ -4,6 +4,7 @@
 *.jar
 *.war
 *.ear
+<<<<<<< HEAD
 
 # Eclipse files #
 .classpath
@@ -12,3 +13,5 @@
 
 # Maven working dir
 target
+=======
+>>>>>>> 1578b15... Initial commit
