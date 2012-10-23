@@ -5,6 +5,7 @@
 *.war
 *.ear
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Eclipse files #
 .classpath
@@ -15,3 +16,5 @@
 target
 =======
 >>>>>>> 1578b15... Initial commit
+=======
+>>>>>>> 1578b15bdcf7077fdf1d6bd93b76729da69c69cc
