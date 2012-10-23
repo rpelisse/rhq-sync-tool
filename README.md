@@ -21,6 +21,7 @@ TODO
 
 * Configure assembly to generate proper zip file
 * Add changelog plugin
+* Make jon-mig.log location configurable
 * Inspect dependencies, see if some could be removed
 * Add spec to package as an RPM
 * Add proper static documentation (Awestruct ? Middleman ? MarkedDown ?)
