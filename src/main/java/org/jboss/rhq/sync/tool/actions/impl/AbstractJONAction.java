@@ -8,7 +8,7 @@ import org.jboss.rhq.sync.tool.BaseRemote;
 import org.jboss.rhq.sync.tool.LoginConfiguration;
 import org.jboss.rhq.sync.tool.actions.JONAction;
 import org.jboss.rhq.sync.tool.actions.JonActionResult;
-import org.jboss.rhq.sync.tool.util.JBossPropertiesUtil;
+import org.jboss.rhq.sync.tool.util.PropertiesLoaderUtil;
 import org.rhq.core.domain.auth.Subject;
 
 
@@ -70,7 +70,7 @@ public abstract class AbstractJONAction implements JONAction {
     protected abstract JonActionResult.JonActionResultType perform(Map<String, String> values);
     
     protected AbstractJONAction() {
-        props = JBossPropertiesUtil.getProperties();
+        props = PropertiesLoaderUtil.getProperties();
         // hostname -f
         loginConfiguration = new LoginConfiguration((String) props.get("jon.server.user"),
                 (String) props.get("jon.server.password"),
@@ -80,7 +80,7 @@ public abstract class AbstractJONAction implements JONAction {
     }
 
     public AbstractJONAction(LoginConfiguration loginConfiguration,BaseRemote baseRemote) {
-        props = JBossPropertiesUtil.getProperties();
+        props = PropertiesLoaderUtil.getProperties();
         this.baseRemote = baseRemote;
         this.loginConfiguration = loginConfiguration;
 	}

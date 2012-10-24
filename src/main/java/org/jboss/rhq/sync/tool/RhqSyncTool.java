@@ -12,7 +12,7 @@ import org.jboss.rhq.sync.tool.cli.PasswordEncoder;
 import org.jboss.rhq.sync.tool.cli.QualifierType;
 import org.jboss.rhq.sync.tool.cli.TargetDirectoryValidator;
 import org.jboss.rhq.sync.tool.util.FileUtils;
-import org.jboss.rhq.sync.tool.util.JBossPropertiesUtil;
+import org.jboss.rhq.sync.tool.util.PropertiesLoaderUtil;
 import org.jboss.rhq.sync.tool.util.SystemUtils;
 
 import com.beust.jcommander.JCommander;
@@ -46,7 +46,7 @@ public final class RhqSyncTool {
 		printParameters(parameters);
 		// loading properties
 		if ( parameters.getPropertiesFile() != null )
-			SystemUtils.setSystemProperty(JBossPropertiesUtil.JON_SETTINGS_PROPERTYNAME,parameters.getPropertiesFile().getAbsolutePath());
+			SystemUtils.setSystemProperty(PropertiesLoaderUtil.USER_OVERRIDE_PROPERTIES_FILE,parameters.getPropertiesFile().getAbsolutePath());
 		logger.debug("Properties loaded.");
 		CLIAction action = actionFactory(parameters.getAction());
 		logger.debug("Action created :" + action.toString());
