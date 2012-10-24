@@ -11,7 +11,7 @@ import org.jboss.rhq.sync.tool.actions.impl.impex.templates.RolesExportAction;
 
 /**
  *  @author Romain PELISSE - <belaran@redhat.com>
- *  
+ *
  */
 public abstract class AbstractJONImportAction<T> extends AbstractJONAction implements JONAction {
 
@@ -21,21 +21,18 @@ public abstract class AbstractJONImportAction<T> extends AbstractJONAction imple
     public AbstractJONImportAction(LoginConfiguration loginConfiguration,BaseRemote baseRemote) {
     	super(loginConfiguration,baseRemote);
     }
-    
+
     public AbstractJONImportAction() {
     	super();
     }
 
     protected abstract T loadFromFile(String filename);
-    
+
     protected abstract JonActionResultType doImport(T valueToImport);
-	
-    /* (non-Javadoc)
-	 * @see com.allianz.amos.autoimport.actions.impl.AbstractJONAction#perform(java.util.Map)
-	 */
+
 	@Override
 	protected JonActionResultType perform(Map<String, String> values) {
-		return doImport(loadFromFile(values.get(AbstractJONExportAction.WORKING_DIRECTORY_PROPERTY).concat(values.get(RolesExportAction.ROLES_EXPORT_OUTPUT_FILENAME))));		
+		return doImport(loadFromFile(values.get(AbstractJONExportAction.WORKING_DIRECTORY_PROPERTY).concat(values.get(RolesExportAction.ROLES_EXPORT_OUTPUT_FILENAME))));
 	}
-	
+
 }

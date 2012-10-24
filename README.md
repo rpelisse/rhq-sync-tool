@@ -19,16 +19,13 @@ $ mvn exec:java -Dexec.mainClass="org.jboss.rhq.sync.tool.RhqSyncTool" -Dexec.ar
 TODO
 ====
 
-* Configure assembly to generate proper zip file
-* Add changelog plugin
-* Make jon-mig.log location configurable
-* Inspect dependencies, see if some could be removed
-* Add spec to package as an RPM
-* Add proper static documentation (Awestruct ? Middleman ? MarkedDown ?)
-* See if tools works for > 3.0.1
-* Release version 1.0
-=======
-A tool for RHQ to export and import data from one server to another, using JSON as a transfer format.
->>>>>>> 1578b15... Initial commit
-=======
-A tool for RHQ to export and import data from one server to another, using JSON as a transfer format.
+* Urgent (for release):
+** Configure assembly to generate proper zip file
+** Add changelog plugin
+** Release version 1.0
+** Add spec to package as an RPM
+* After release:
+** Add proper static documentation (Awestruct ? Middleman ? MarkedDown ?)
+** Make jon-mig.log location configurable
+** Inspect dependencies, see if some more could be removed
+** See if tools works for > 3.0.1
