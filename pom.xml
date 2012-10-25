@@ -43,7 +43,7 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
-     </plugins>
+    </plugins>
   </build>
 
   <dependencies>
@@ -164,5 +164,22 @@
       <timezone>+1</timezone>
     </developer>
   </developers>
+
+  <reporting>
+    <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-changes-plugin</artifactId>
+      <version>2.8</version>
+      <reportSets>
+        <reportSet>
+          <reports>
+            <report>changes-report</report>
+          </reports>
+        </reportSet>
+     </reportSets>
+    </plugin>
+  </plugins>
+  </reporting>
 
 </project>
