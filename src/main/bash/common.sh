@@ -4,7 +4,7 @@ readonly AGENT_PLATFORM=$(hostname -f)
 setUpClassPath() {
   local jar_directory="${1}"
 
-  local classpath="${BASEDIR}:${BASEDIR}/@project.name@-@jon.version@-@release.version@.jar"
+  local classpath="${BASEDIR}:${BASEDIR}/${project.name}-${project.version}.jar"
   for jarfile in $(ls ${jar_directory}/*.jar)
   do
     classpath="${classpath}:${jarfile}"
