@@ -43,6 +43,17 @@
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
+
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptor>src/main/assembly/release.xml</descriptor>
+          <appendAssemblyId>false</appendAssemblyId>
+            <archiverConfig>
+              <defaultDirectoryMode>493</defaultDirectoryMode> <!-- 0755 -->
+            </archiverConfig>
+        </configuration>
+      </plugin>
      </plugins>
   </build>
 
