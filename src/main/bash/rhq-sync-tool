@@ -1,3 +1,6 @@
+#!/bin/bash
+readonly MAIN_CLASSNAME="org.jboss.rhq.sync.tool.RhqSyncTool"
+readonly BASEDIR="."
 readonly RHQ_CLIENT_JAVA_OPTS="${JAVA_OPTS} -Xms63m -Xmx128m -Djava.net.preferIPv4Stack=true"
 readonly AGENT_PLATFORM=$(hostname -f)
 
@@ -31,3 +34,12 @@ if [ -z "${DEBUG}" ] ; then
 fi
 
 set -e
+
+setUpClassPath "${BASEDIR}/lib"
+
+if [ $# -eq 0 ] ;then
+    java  -classpath "${CLASSPATH}"  "${MAIN_CLASSNAME}" '--help'
+else
+    java ${RHQ_CLIENT_JAVA_OPTS} -classpath "${CLASSPATH}" "${MAIN_CLASSNAME}" ${*}
+fi
+exit ${?}

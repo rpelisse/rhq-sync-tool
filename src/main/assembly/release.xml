@@ -20,7 +20,6 @@
     <fileSet>
         <includes>
             <include>${project.name}.sh</include>
-            <include>common.sh</include>
         </includes>
         <directory>src/main/bash</directory>
         <outputDirectory>bin</outputDirectory>
