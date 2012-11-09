@@ -6,7 +6,6 @@ import org.jboss.rhq.sync.tool.BaseRemote;
 import org.jboss.rhq.sync.tool.LoginConfiguration;
 import org.jboss.rhq.sync.tool.actions.JONAction;
 import org.jboss.rhq.sync.tool.actions.JonActionResult.JonActionResultType;
-import org.jboss.rhq.sync.tool.actions.impl.impex.templates.RolesExportAction;
 
 
 /**
@@ -31,8 +30,8 @@ public abstract class AbstractJONImportAction<T> extends AbstractJONAction imple
     protected abstract JonActionResultType doImport(T valueToImport);
 
 	@Override
-	protected JonActionResultType perform(Map<String, String> values) {
-		return doImport(loadFromFile(values.get(AbstractJONExportAction.WORKING_DIRECTORY_PROPERTY).concat(values.get(RolesExportAction.ROLES_EXPORT_OUTPUT_FILENAME))));
+	protected JonActionResultType perform(Map<String, String> values) {	    
+		return doImport(loadFromFile(values.get(AbstractJONExportAction.WORKING_DIRECTORY_PROPERTY).concat(values.get(IMPORT_FILENAME))));
 	}
 
 }
