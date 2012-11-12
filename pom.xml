@@ -13,15 +13,14 @@
     <system>GitHub</system>
     <url>http://github.com/ivanthelad/rhq-sync-tool</url>
   </issueManagement>
-<!-- TODO:
+
   <licenses>
   	<license>
-  		<name>TODO</name>
-        <url>TODO</url>
-  		<distribution>repo</distribution>
+  		<name>LGPL</name>
+        <url>http://www.gnu.org/licenses/lgpl.html</url>
   	</license>
   </licenses>
--->
+
   <scm>
     <url>https://github.com/ivanthelad/rhq-sync-tool</url>
     <connection>scm:git:https://github.com/ivanthelad/rhq-sync-tool.git</connection>

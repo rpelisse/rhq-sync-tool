@@ -1,7 +1,7 @@
 rhq-sync-tool
 =============
 
-A tool for RHQ to export and import data from one server to another, using JSON as a transfer format.
+A tool for RHQ to export and import data from one server to another, using JSON as a transfer format. This tool is released under the LGPL license.
 
 How to build ?
 ==============
