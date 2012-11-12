@@ -2,7 +2,7 @@ package org.jboss.rhq.sync.tool;
 
 import org.apache.log4j.Logger;
 import org.rhq.core.domain.auth.Subject;
-import org.rhq.enterprise.client.RemoteClient;
+import org.rhq.enterprise.clientapi.RemoteClient;
 import org.rhq.enterprise.server.auth.SubjectManagerRemote;
 import org.rhq.enterprise.server.authz.RoleManagerRemote;
 import org.rhq.enterprise.server.configuration.ConfigurationManagerRemote;
@@ -130,7 +130,7 @@ public class BaseRemote {
         return subject;
     }
 
-    private RemoteClient getRemoteClient() {
+    private org.rhq.enterprise.clientapi.RemoteClient getRemoteClient() {
         return remoteClient;
     }
 
