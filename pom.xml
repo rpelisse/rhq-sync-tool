@@ -4,7 +4,7 @@
   <name>rhq-sync-tool</name>
   <groupId>org.redhat.jboss.rhq</groupId>
   <artifactId>rhq-sync-tool</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
 
   <description>a tool to export and import data from one RHQ server to an other</description>
   <url>https://github.com/ivanthelad/rhq-sync-tool.git</url>
@@ -170,7 +170,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <rhq.version>4.2.0</rhq.version>
+    <rhq.version>4.3.0</rhq.version>
     <jboss.version>4.2.2.GA</jboss.version>
   </properties>
 
