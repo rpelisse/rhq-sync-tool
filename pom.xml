@@ -4,7 +4,7 @@
   <name>rhq-sync-tool</name>
   <groupId>org.redhat.jboss.rhq</groupId>
   <artifactId>rhq-sync-tool</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.RHQ.4.2.0</version>
 
   <description>a tool to export and import data from one RHQ server to an other</description>
   <url>https://github.com/ivanthelad/rhq-sync-tool.git</url>
